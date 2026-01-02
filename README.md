@@ -95,10 +95,11 @@ CREATE EXTENSION hstore;
 
 ### Import OSM Data
 
+Download https://osm2pgsql.org/download/windows/
 Use `osm2pgsql` to import OSM geometries into your database:
 
 ```bash
-osm2pgsql -d osm -U postgres --create --slim --hstore -C 2000 -G --number-processes 4 mazowieckie-latest.osm.pbf
+osm2pgsql -d osm -U postgres -W --create --slim --hstore -C 2000 -G --number-processes 4 mazowieckie-latest.osm.pbf
 ```
 
 ### Required Tables
